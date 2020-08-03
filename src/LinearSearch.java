@@ -21,5 +21,13 @@ public class LinearSearch {
 
         int res2 = LinearSearch.search(data, 10);
         System.out.println(res2);
+
+        Student[] students = {new Student("Leo"), new Student("Xiang"), new Student("Tom")};
+
+        Student leo = new Student("leo");
+
+        int res3  = LinearSearch.search(students, leo);
+
+        System.out.println(res3);
     }
 }
