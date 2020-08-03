@@ -1,8 +1,9 @@
 // 从简单的线性查找开始
 public class LinearSearch {
-    private LinearSearch(){}
+    private LinearSearch() {
+    }
 
-    public static int search(int[] data, int target) {
+    public static <E> int search(E[] data, E target) {
         for (int i = 0; i < data.length; i++) {
             if (data[i] == target) {
                 return i;
@@ -13,7 +14,7 @@ public class LinearSearch {
     }
 
     public static void main(String[] args) {
-        int[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        Integer[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
 
         int res = LinearSearch.search(data, 3);
         System.out.println(res);
