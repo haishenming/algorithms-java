@@ -14,20 +14,23 @@ public class LinearSearch {
     }
 
     public static void main(String[] args) {
-        Integer[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        Integer[] data = ArrayGenerator.generatorOrderedArray(10000000);
 
-        int res = LinearSearch.search(data, 3);
+        long start = System.nanoTime();
+        int res = LinearSearch.search(data, 100000000);
+        System.out.println((System.nanoTime() - start)/1000000000.0);
         System.out.println(res);
 
-        int res2 = LinearSearch.search(data, 10);
-        System.out.println(res2);
 
-        Student[] students = {new Student("Leo"), new Student("Xiang"), new Student("Tom")};
-
-        Student leo = new Student("leo");
-
-        int res3  = LinearSearch.search(students, leo);
-
-        System.out.println(res3);
+//        int res2 = LinearSearch.search(data, 10);
+//        System.out.println(res2);
+//
+//        Student[] students = {new Student("Leo"), new Student("Xiang"), new Student("Tom")};
+//
+//        Student leo = new Student("leo");
+//
+//        int res3  = LinearSearch.search(students, leo);
+//
+//        System.out.println(res3);
     }
 }
