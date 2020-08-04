@@ -1,3 +1,4 @@
+package LinearSearch;
 
 public class ArrayGenerator {
     private ArrayGenerator() {
@@ -12,5 +13,4 @@ public class ArrayGenerator {
 
         return arr;
     }
-
 }

@@ -1,3 +1,5 @@
+package LinearSearch;
+
 // 从简单的线性查找开始
 public class LinearSearch {
     private LinearSearch() {
@@ -22,14 +24,14 @@ public class LinearSearch {
         System.out.println(res);
 
 
-//        int res2 = LinearSearch.search(data, 10);
+//        int res2 = LinearSearch.LinearSearch.search(data, 10);
 //        System.out.println(res2);
 //
-//        Student[] students = {new Student("Leo"), new Student("Xiang"), new Student("Tom")};
+//        LinearSearch.Student[] students = {new LinearSearch.Student("Leo"), new LinearSearch.Student("Xiang"), new LinearSearch.Student("Tom")};
 //
-//        Student leo = new Student("leo");
+//        LinearSearch.Student leo = new LinearSearch.Student("leo");
 //
-//        int res3  = LinearSearch.search(students, leo);
+//        int res3  = LinearSearch.LinearSearch.search(students, leo);
 //
 //        System.out.println(res3);
     }
