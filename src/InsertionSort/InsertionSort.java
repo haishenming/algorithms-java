@@ -22,7 +22,6 @@ public class InsertionSort {
         }
     }
 
-
     private static <E> void swap(E[] arr, int j, int i) {
         E t = arr[j];
         arr[j] = arr[i];
