@@ -32,6 +32,26 @@ public class Array {
         return size == 0;
     }
 
+    // 在最後添加一個元素
+    public void addLast(int e) {
+        if (data.length <= size) {
+            throw new IllegalArgumentException("Addlast failed. Array is full");
+        }
 
+        data[size] = e;
+        size ++;
+    }
+
+    public void add(int index, int e) {
+        if (data.length <= size) {
+            throw new IllegalArgumentException("Add failed. Array is full");
+        }
+
+        if (index < 0 || index >= data.length) {
+
+        }
+
+
+    }
 
 }
